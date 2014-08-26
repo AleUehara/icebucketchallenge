@@ -1,0 +1,181 @@
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+      google.load("visualization", "1", {packages:["orgchart"]});
+      google.setOnLoadCallback(drawChart);
+      function drawChart() {
+
+        lines = [
+
+          ['Dana White', 'http://instagram.com/p/rnkB_YPA0_/', '', 'UFC'],
+
+          ['Lorenzo Fertitta', 'http://instagram.com/p/rp8VcnPA8m/', 'Dana White', 'UFC'],
+          ['Shaquille O’Neal', 'http://instagram.com/p/sABqYvwT0X/', 'Dana White', 'NBA'],
+          ['Ronda Rousey', 'https://www.youtube.com/watch?v=Y9gm8760PNQ', 'Dana White', 'UFC'],
+
+          ['Sylvester Stallone','', 'Ronda Rousey', 'Actor'],
+          ['Dwayne Johnson','', 'Ronda Rousey', 'Actor'],
+          ['Gina Carano','', 'Ronda Rousey', 'UFC'],
+
+          ['Channing Tatum','https://www.youtube.com/watch?v=e7OW6UW7018', 'Dwayne Johnson', 'Actor'],
+          ['Mark Wahlberg', 'https://www.facebook.com/photo.php?v=10152694177836532', 'Dwayne Johnson', 'Actor'],
+          ['Brad Slater', '', 'Dwayne Johnson', ''],
+
+          ['Jonah Hill', '', 'Channing Tatum', 'Actor'],
+          ['Meryl Streep', '', 'Channing Tatum', 'Actor'],
+          ['Daniel Day-Lewis', '', 'Channing Tatum', 'Actor'],
+
+          ['Barack Obama', '', 'Shaquille O’Neal', 'President'],
+          ['Al Sharpton', '', 'Shaquille O’Neal', ''],
+          ['Johnny Manziel', '', 'Shaquille O’Neal', 'NFL'],
+
+          ['Swiss Beats', '', 'Lorenzo Fertitta', 'Music'],
+          ['DeMarco Murray', '', 'Lorenzo Fertitta', 'NFL'],
+          ['Marcedes Lewis', '', 'Lorenzo Fertitta', 'NFL'],
+
+          ['Spike Lee', '', 'Mark Wahlberg', 'Director'],
+          ['Eminem', 'https://www.youtube.com/watch?v=hM9Pf9BPX-o', 'Mark Wahlberg', 'Music'],
+          ['Manny Pacquiao', '', 'Mark Wahlberg', 'Boxer'],
+
+          ['Mr. Porter', '', 'Eminem', 'Music'],
+          ['Rick Rubin', '', 'Eminem', 'Music Producer'],
+          ['Rihanna', 'http://instagram.com/p/sEL1lIn-Op/', 'Eminem', 'Music'],
+
+          ['Neymar', 'http://instagram.com/p/r0FDjRRtjV', '', 'Soccer'],
+
+          ['Juan Camilo Zúñiga', 'https://www.youtube.com/watch?v=Kp9fZmsCIFY', 'Neymar', 'Soccer'],
+          ['Robinho', 'https://www.youtube.com/watch?v=K-xlm04pxAg', 'Neymar', 'Soccer'],
+          ['Niall Horan', '', 'Neymar', 'Music'],
+
+          ['James Rodríguez', '', 'Juan Camilo Zúñiga', 'Soccer'],
+          ['Pablo Armero', 'https://www.youtube.com/watch?v=nRJXJgG7NxU', 'Juan Camilo Zúñiga', 'Soccer'],
+          ['Juan Cuadrado', '', 'Juan Camilo Zúñiga', 'Soccer'],
+ 
+          ['Diego', 'https://www.youtube.com/watch?v=BNznRvCnGcs', 'Robinho', 'Soccer'],
+          ['Mano Brown', '', 'Robinho', 'Music'],
+          ['Péricles', '', 'Robinho', 'Music'],
+
+          ['Miranda', '', 'Diego', 'Soccer'],
+          ['Filipe Luis', 'https://www.youtube.com/watch?v=f-spPxBIoSg', 'Diego', 'Music'],
+
+          ['Koke', 'https://www.youtube.com/watch?v=y2_aAhCENxU', 'Filipe Luis', 'Soccer'],
+          ['Dante', 'https://www.youtube.com/watch?v=XdQiebJXLNk', 'Filipe Luis', 'Soccer'],
+          ['Gustavo Kuerten', '', 'Filipe Luis', 'Tennis'],
+
+          ['Michel Bastos', 'https://www.youtube.com/watch?v=bbT5vwZh20w', 'Dante', 'Soccer'],
+          ['Claudio Pizarro', '', 'Dante', 'Soccer'],
+          ['Franz Beckenbauer', '', 'Dante', 'Soccer'],
+
+          ['Careca', '', 'Michel Bastos', 'Soccer'],
+          ['Cris', '', 'Michel Bastos', 'Soccer'],
+          ['Rafael Schmitz', '', 'Michel Bastos', 'Soccer'],
+
+          ['Antoine Griezmann', 'https://www.youtube.com/watch?v=VcQRkvJ-8aE', 'Koke', 'Soccer'],
+          ['David De Gea', '', 'Koke', 'Soccer'],
+          ['Iker Muniain', '', 'Koke', 'Soccer'],
+
+          ['Karim Benzema', 'https://www.youtube.com/watch?v=flIx7138Xis', 'Antoine Griezmann', 'Soccer'],
+          ['Black M', '', 'Antoine Griezmann', 'Music'],
+          ['Nicolas Batum', '', 'Antoine Griezmann', 'NBA'],
+
+          ['Frank Ribery', '', 'Karim Benzema', 'Soccer'],
+          ['Gonzalo Higuain', 'http://instagram.com/ghiguain20_9', 'Karim Benzema', 'Soccer'],
+
+          ['Víctor Ibarbo', '', 'Pablo Armero', 'Soccer'],
+          ['Cristian Zapata', '', 'Pablo Armero', 'Soccer'],
+
+          ['Javier Mascherano', 'https://www.youtube.com/watch?v=uNkIIWVunSY', '', 'Soccer'],
+
+          ['Gonzalo Higuaín', '', 'Javier Mascherano', 'Soccer'],
+          ['Manu Ginóbili ', '', 'Javier Mascherano', 'NBA'],
+          ['Marcos Rojo', '', 'Javier Mascherano', 'Soccer'],
+
+          ['Gerard Deulofeu', '', 'Iker Muniain', 'Soccer'],
+          ['Gorka Iraizoz ', '', 'Iker Muniain', 'Soccer'],
+          ['Joaquín Caparrós', '', 'Iker Muniain', 'Soccer'],
+
+          ['Camilla Belle', 'https://www.youtube.com/watch?v=nuCTbfdoN70', '', 'Actor'],
+
+          ['Alexandre Pato', 'https://www.youtube.com/watch?v=6g0ITQZFEUc', 'Camilla Belle', 'Soccer'],
+          ['ZZ Ward', '', 'Camilla Belle', 'Music'],
+          ['Steve Aoki', '', 'Camilla Belle', 'Music'],
+
+          ['Felipe Massa', 'http://instagram.com/p/r4nFbCnLTr/', 'Alexandre Pato', 'F1'],
+          ['Chiara Ferragni', '', 'Alexandre Pato', 'Model'],
+          ['Sabrina Sato', '', 'Alexandre Pato', 'TV'],
+
+          ['Fernando Alonso', '', 'Felipe Massa', 'F1'],
+          ['Daniel Ricciardo', 'https://www.youtube.com/watch?v=q7QZr5hiXe0', 'Felipe Massa', 'F1'],
+          ['Galvão Bueno', 'http://instagram.com/p/r7RguXHLY6/', 'Felipe Massa', 'TV'],
+
+          
+          ['Christian Horner', '', 'Daniel Ricciardo', 'F1'],
+          ['Lewis Hamilton', 'https://www.youtube.com/watch?v=1_FFsqixXpI', 'Daniel Ricciardo', 'F1'],
+          ['Conor McGregor', '', 'Daniel Ricciardo', 'UFC'],
+
+          ['Will Smith', 'https://www.youtube.com/watch?v=zHRSs93rlEw', 'Lewis Hamilton', 'Actor'],
+          ['Tom Cruise', 'https://www.youtube.com/watch?v=Pk-pOYlWTv8', 'Lewis Hamilton', 'Actor'],
+          ['Naomi Campbell', '', 'Lewis Hamilton', 'Model'],
+          ['Miguel', '', 'Lewis Hamilton', 'Music'],
+
+          ['Adam Goodman', '', 'Tom Cruise', 'Producer'],
+          ['David Ellison', '', 'Tom Cruise', 'Producer'],
+          ['Brad Grey', '', 'Tom Cruise', 'Producer'],
+
+          ['Jay Z', '', 'Will Smith', 'Music'],
+          ['Beyonce', '', 'Will Smith', 'Music'],
+
+          ['Cacá Bueno', '', 'Galvão Bueno', 'Stock Car'],
+          ['Popó Bueno', '', 'Galvão Bueno', 'Stock Car'],
+          ['Arnaldo Cézar Coelho', 'https://www.youtube.com/watch?v=reswowfDrlw', 'Galvão Bueno', 'TV'],
+
+
+
+          ['Cleber Machado', '', 'Arnaldo Cézar Coelho', 'TV'],
+          ['Luís Roberto', '', 'Arnaldo Cézar Coelho', 'TV'],
+          ['Júnior', '', 'Arnaldo Cézar Coelho', 'Soccer'],
+
+          // ['', '', '', ''],
+
+        ]
+        list_line = createListLine(lines);
+        drawGoogleChart(list_line);
+      }
+
+      function createListLine(lines){
+        list_line = []
+        
+        for (var i = 0; i < lines.length; i++) {
+                if (lines[i][1] == ''){
+                  name = lines[i][0]
+                }else{
+                  name = '<a href="'+lines[i][1]+'">'+lines[i][0]+'</a>'
+                }
+
+                chart_line = [{v:lines[i][0], f:name+'<div font-style:italic">'+lines[i][3]+'</div>'}, lines[i][2], lines[i][3]],
+                list_line.push(chart_line);
+              }
+        return list_line
+
+      }
+
+      function drawGoogleChart(list_line){
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Name');
+        data.addColumn('string', 'Manager');
+        data.addColumn('string', 'ToolTip');
+
+        data.addRows(list_line);
+
+        var chart = new google.visualization.OrgChart(document.getElementById('chart_div2'));
+        chart.draw(data, {allowHtml:true});
+      }
+
+   </script>
+    </head>
+  <body>
+    <div id="chart_div""></div>
+    <div id="chart_div2""></div>
+  </body>
+</html>
